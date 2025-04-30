@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>IS2025 Demo</title>
+  <title>IS2025 Prosody Demo</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: sans-serif;
       margin: 20px;
     }
     h1, h2 {
@@ -13,67 +13,102 @@
     }
     table {
       border-collapse: collapse;
-      width: 100%;
-      margin-bottom: 30px;
+      margin: 20px auto;
     }
     th, td {
       border: 1px solid #ccc;
-      padding: 6px;
+      padding: 8px;
       text-align: center;
     }
-    th {
-      background-color: #f0f0f0;
-    }
     audio {
-      width: 180px;
+      width: 200px;
     }
   </style>
 </head>
 <body>
 
-<h1>Demo page for IS2025 Submission</h1>
-<h2>Emotion Control in TTS</h2>
+  <h1>Demo: Prosody Control in TTS</h1>
+  <h2>Speaker p340</h2>
 
-<!-- Example Table: emo_p340_angry_centroid_X -->
-<h3>Speaker p340 - Angry (centroid)</h3>
-<table>
-  <tr>
-    <th>Scale</th>
-    <th>0.5</th>
-    <th>1.0</th>
-    <th>1.5</th>
-  </tr>
-  <tr>
-    <th>Sample 0</th>
-    <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/emo_p340_angry_centroid_0_mul0.5.wav?raw=true" type="audio/wav"></audio></td>
-    <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/emo_p340_angry_centroid_0_mul1.0.wav?raw=true" type="audio/wav"></audio></td>
-    <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/emo_p340_angry_centroid_0_mul1.5.wav?raw=true" type="audio/wav"></audio></td>
-  </tr>
-  <tr>
-    <th>Sample 1</th>
-    <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/emo_p340_angry_centroid_1_mul0.5.wav?raw=true" type="audio/wav"></audio></td>
-    <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/emo_p340_angry_centroid_1_mul1.0.wav?raw=true" type="audio/wav"></audio></td>
-    <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/emo_p340_angry_centroid_1_mul1.5.wav?raw=true" type="audio/wav"></audio></td>
-  </tr>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th>Emotion</th>
+        <th>Centroid 0 (0.5)</th>
+        <th>Centroid 0 (1.0)</th>
+        <th>Centroid 0 (1.5)</th>
+        <th>Centroid 1 (0.5)</th>
+        <th>Centroid 1 (1.0)</th>
+        <th>Centroid 1 (1.5)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Angry</td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+      </tr>
+      <!-- Repeat similar rows for other emotions like Calm, Happy, etc. -->
+    </tbody>
+  </table>
 
-<!-- Add more sections for other emotions/speakers as needed -->
+  <h2>Speaker p345</h2>
 
-<h3>Reference Samples</h3>
-<table>
-  <tr>
-    <th>Emotion</th>
-    <th>Reference</th>
-  </tr>
-  <tr><td>Angry</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_angry.wav?raw=true" type="audio/wav"></audio></td></tr>
-  <tr><td>Calm</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_calm.wav?raw=true" type="audio/wav"></audio></td></tr>
-  <tr><td>Enunciated</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_enunciated.wav?raw=true" type="audio/wav"></audio></td></tr>
-  <tr><td>Happy</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_happy.wav?raw=true" type="audio/wav"></audio></td></tr>
-  <tr><td>Projected</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_projected.wav?raw=true" type="audio/wav"></audio></td></tr>
-  <tr><td>Sad</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_sad.wav?raw=true" type="audio/wav"></audio></td></tr>
-  <tr><td>Sarcastic</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_sarcastic.wav?raw=true" type="audio/wav"></audio></td></tr>
-  <tr><td>Whisper</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_whisper.wav?raw=true" type="audio/wav"></audio></td></tr>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th>Emotion</th>
+        <th>Centroid 0 (0.5)</th>
+        <th>Centroid 0 (1.0)</th>
+        <th>Centroid 0 (1.5)</th>
+        <th>Centroid 1 (0.5)</th>
+        <th>Centroid 1 (1.0)</th>
+        <th>Centroid 1 (1.5)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Angry</td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+      </tr>
+      <!-- Repeat similar rows for other emotions like Calm, Happy, etc. -->
+    </tbody>
+  </table>
+
+  <h2>Reference Samples</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Sample</th>
+        <th>Audio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>p340 Reference</td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/p340_reference.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+        <td>p345 Reference</td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/p345_reference.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+        <td>Angry Reference</td>
+        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/ref_angry.wav" type="audio/wav"></audio></td>
+      </tr>
+      <!-- Add more reference samples as needed -->
+    </tbody>
+  </table>
 
 </body>
 </html>
