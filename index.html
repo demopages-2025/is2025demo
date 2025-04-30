@@ -1,114 +1,256 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>IS2025 Prosody Demo</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 20px;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    table {
-      border-collapse: collapse;
-      margin: 20px auto;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: center;
-    }
-    audio {
-      width: 200px;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>Demo: Prosody Control in TTS</h1>
-  <h2>Speaker p340</h2>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Emotion</th>
-        <th>Centroid 0 (0.5)</th>
-        <th>Centroid 0 (1.0)</th>
-        <th>Centroid 0 (1.5)</th>
-        <th>Centroid 1 (0.5)</th>
-        <th>Centroid 1 (1.0)</th>
-        <th>Centroid 1 (1.5)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Angry</td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
-      </tr>
-      <!-- Repeat similar rows for other emotions like Calm, Happy, etc. -->
-    </tbody>
-  </table>
-
-  <h2>Speaker p345</h2>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Emotion</th>
-        <th>Centroid 0 (0.5)</th>
-        <th>Centroid 0 (1.0)</th>
-        <th>Centroid 0 (1.5)</th>
-        <th>Centroid 1 (0.5)</th>
-        <th>Centroid 1 (1.0)</th>
-        <th>Centroid 1 (1.5)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Angry</td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
-      </tr>
-      <!-- Repeat similar rows for other emotions like Calm, Happy, etc. -->
-    </tbody>
-  </table>
-
-  <h2>Reference Samples</h2>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Sample</th>
-        <th>Audio</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>p340 Reference</td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/p340_reference.wav" type="audio/wav"></audio></td>
-      </tr>
-      <tr>
-        <td>p345 Reference</td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/p345_reference.wav" type="audio/wav"></audio></td>
-      </tr>
-      <tr>
-        <td>Angry Reference</td>
-        <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/ref_angry.wav" type="audio/wav"></audio></td>
-      </tr>
-      <!-- Add more reference samples as needed -->
-    </tbody>
-  </table>
-
-</body>
-</html>
+<html><head><meta charset="utf-8"><title>Demo</title><style>
+table { border-collapse: collapse; margin: 20px auto; }
+th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
+audio { width: 180px; }
+body { font-family: sans-serif; }
+</style></head><body>
+<h1 style="text-align:center">IS2025 Prosody Demo</h1>
+<h2>p340</h2>
+<h3>neutral</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td>–</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_neutral_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td>–</td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td>–</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_neutral_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td>–</td>
+</tr></table>
+<h3>angry</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_angry_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>calm</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_calm_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_calm_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_calm_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_calm_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_calm_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_calm_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>enunciated</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_enunciated_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_enunciated_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_enunciated_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_enunciated_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_enunciated_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_enunciated_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>happy</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_happy_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_happy_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_happy_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_happy_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_happy_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_happy_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>projected</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_projected_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_projected_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_projected_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_projected_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_projected_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_projected_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>sad</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_sad_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_sad_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_sad_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_sad_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_sad_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_sad_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>sarcastic</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_sarcastic_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_sarcastic_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_sarcastic_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_sarcastic_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_sarcastic_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_sarcastic_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>whisper</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_whisper_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_whisper_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_whisper_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_whisper_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_whisper_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p340_whisper_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h2>p345</h2>
+<h3>neutral</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td>–</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_neutral_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td>–</td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td>–</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_neutral_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td>–</td>
+</tr></table>
+<h3>angry</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_angry_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>calm</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_calm_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_calm_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_calm_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_calm_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_calm_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_calm_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>enunciated</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_enunciated_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_enunciated_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_enunciated_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_enunciated_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_enunciated_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_enunciated_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>happy</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_happy_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_happy_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_happy_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_happy_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_happy_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_happy_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>projected</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_projected_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_projected_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_projected_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_projected_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_projected_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_projected_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>sad</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_sad_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_sad_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_sad_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_sad_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_sad_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_sad_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>sarcastic</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_sarcastic_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_sarcastic_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_sarcastic_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_sarcastic_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_sarcastic_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_sarcastic_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h3>whisper</h3>
+<h4>Centroid 0</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_whisper_centroid_0_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_whisper_centroid_0_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_whisper_centroid_0_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h4>Centroid 1</h4>
+<table><tr><th>Multiplier</th><th>0.5</th><th>1.0</th><th>1.5</th></tr><tr><td>Audio</td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_whisper_centroid_1_mul0.5.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_whisper_centroid_1_mul1.0.wav" type="audio/wav"></audio></td>
+<td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/emo_p345_whisper_centroid_1_mul1.5.wav" type="audio/wav"></audio></td>
+</tr></table>
+<h2>Reference Audios</h2><table><tr>
+<td><strong>p340_reference</strong><br><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/p340_reference.wav" type="audio/wav"></audio></td>
+<td><strong>p345_reference</strong><br><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/p345_reference.wav" type="audio/wav"></audio></td>
+<td><strong>ref_angry</strong><br><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/ref_angry.wav" type="audio/wav"></audio></td>
+<td><strong>ref_calm</strong><br><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/ref_calm.wav" type="audio/wav"></audio></td>
+<td><strong>ref_enunciated</strong><br><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/ref_enunciated.wav" type="audio/wav"></audio></td>
+<td><strong>ref_happy</strong><br><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/ref_happy.wav" type="audio/wav"></audio></td>
+<td><strong>ref_projected</strong><br><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/ref_projected.wav" type="audio/wav"></audio></td>
+<td><strong>ref_sad</strong><br><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/ref_sad.wav" type="audio/wav"></audio></td>
+<td><strong>ref_sarcastic</strong><br><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/ref_sarcastic.wav" type="audio/wav"></audio></td>
+<td><strong>ref_whisper</strong><br><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/raw/main/wavs/ref_whisper.wav" type="audio/wav"></audio></td>
+</tr></table>
+</body></html>
