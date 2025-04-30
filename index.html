@@ -1,196 +1,79 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>TTS</title>
-<style>
-th {
-  border: 1px solid;
-}
-h1 {
-	text-align: center;
-}
-h3 {
-  text-align: center;
-}
-audio {
-  width:190px;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>IS2025 Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 6px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    audio {
+      width: 180px;
+    }
+  </style>
 </head>
-
 <body>
-<br>
-   <h1>Demo page for "PAPER"</h1>
-	
-<br>
-   <br>
-    <div><h2></h2></div>
-   <table>
-        <tr>
-          <th>Value</th>
-          <th style="background-color: #0404fb;">-5</th>
-          <th style="background-color: #3737fd;">-4</th>
-          <th style="background-color: #6a6afb;">-3</th>
-          <th style="background-color: #a6a6fb;">-2</th>
-	  <th style="background-color: #eeeffe;">-1</th>
-          <th style="background-color: #fefefe;">0</th>
-	  <th style="background-color: #fbe4e4;">1</th>
-          <th style="background-color: #fcd3d3;">2</th>
-          <th style="background-color: #fba5a5;">3</th>
-          <th style="background-color: #fc7171;">4</th>
-          <th style="background-color: #fa3131;">5</th>
-        </tr>
 
-      <tbody>
+<h1>Demo page for IS2025 Submission</h1>
+<h2>Emotion Control in TTS</h2>
 
+<!-- Example Table: emo_p340_angry_centroid_X -->
+<h3>Speaker p340 - Angry (centroid)</h3>
+<table>
+  <tr>
+    <th>Scale</th>
+    <th>0.5</th>
+    <th>1.0</th>
+    <th>1.5</th>
+  </tr>
+  <tr>
+    <th>Sample 0</th>
+    <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/emo_p340_angry_centroid_0_mul0.5.wav?raw=true" type="audio/wav"></audio></td>
+    <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/emo_p340_angry_centroid_0_mul1.0.wav?raw=true" type="audio/wav"></audio></td>
+    <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/emo_p340_angry_centroid_0_mul1.5.wav?raw=true" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <th>Sample 1</th>
+    <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/emo_p340_angry_centroid_1_mul0.5.wav?raw=true" type="audio/wav"></audio></td>
+    <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/emo_p340_angry_centroid_1_mul1.0.wav?raw=true" type="audio/wav"></audio></td>
+    <td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/emo_p340_angry_centroid_1_mul1.5.wav?raw=true" type="audio/wav"></audio></td>
+  </tr>
+</table>
 
-        <tr>
-          <th>1</th>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-        </tr>
+<!-- Add more sections for other emotions/speakers as needed -->
 
-        <tr>
-          <th>1</th>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-        
-        </tr>
+<h3>Reference Samples</h3>
+<table>
+  <tr>
+    <th>Emotion</th>
+    <th>Reference</th>
+  </tr>
+  <tr><td>Angry</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_angry.wav?raw=true" type="audio/wav"></audio></td></tr>
+  <tr><td>Calm</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_calm.wav?raw=true" type="audio/wav"></audio></td></tr>
+  <tr><td>Enunciated</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_enunciated.wav?raw=true" type="audio/wav"></audio></td></tr>
+  <tr><td>Happy</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_happy.wav?raw=true" type="audio/wav"></audio></td></tr>
+  <tr><td>Projected</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_projected.wav?raw=true" type="audio/wav"></audio></td></tr>
+  <tr><td>Sad</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_sad.wav?raw=true" type="audio/wav"></audio></td></tr>
+  <tr><td>Sarcastic</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_sarcastic.wav?raw=true" type="audio/wav"></audio></td></tr>
+  <tr><td>Whisper</td><td><audio controls preload="none"><source src="https://github.com/demopages-2025/is2025demo/blob/main/wavs/ref_whisper.wav?raw=true" type="audio/wav"></audio></td></tr>
+</table>
 
-        <tr>
-          <th>3</th>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-        </tr>
-
-        <tr>
-          <th>4</th>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-        </tr>
-
-
-      </tbody>
-    </table>   <div><h2>X<h2></div>
-   <table>
-        <tr>
-          <th>Value</th>
-          <th style="background-color: #0404fb;">-5</th>
-          <th style="background-color: #3737fd;">-4</th>
-          <th style="background-color: #6a6afb;">-3</th>
-          <th style="background-color: #a6a6fb;">-2</th>
-	  <th style="background-color: #eeeffe;">-1</th>
-          <th style="background-color: #fefefe;">0</th>
-	  <th style="background-color: #fbe4e4;">1</th>
-          <th style="background-color: #fcd3d3;">2</th>
-          <th style="background-color: #fba5a5;">3</th>
-          <th style="background-color: #fc7171;">4</th>
-          <th style="background-color: #fa3131;">5</th>
-        </tr>
-
-      <tbody>
-
-
-        <tr>
-          <th>1</th>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-        </tr>
-
-        <tr>
-          <th>2</th>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-
-        </tr>
-
-        <tr>
-          <th>4</th>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-        </tr>
-
-        <tr>
-          <th>5</th>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-          <td><audio controls="" preload="none"><source src="https://github.com/" type="audio/wav"></audio></td>
-        </tr>
-
-
-      </tbody>
-    </table>   
 </body>
 </html>
